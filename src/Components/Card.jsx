@@ -1,8 +1,13 @@
 import React from 'react'
 
-const Card = () => {
+const Card = ({afiliado}) => {
+  console.log(afiliado);
   return (
-    <div>Hola, soy una tarjeta</div>
+    <div>
+     <h4>{afiliado.nombre}</h4>
+      <h3>{afiliado.obraSocial}</h3>
+      <h2>{afiliado.numero}</h2>
+    </div>
   )
 }
 
